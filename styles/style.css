@@ -18,11 +18,9 @@ h1 {
 
 h2 {
   font-size: 3rem;
-  color: white;
 }
 
 h3 {
-  color: white;
   font-size: 1.9rem;
   font-weight: normal;
 }
@@ -60,6 +58,8 @@ a {
   color: white;
 }
 
+/* LANDING PAGE SECTION */
+
 .landing-page {
   min-height: 90vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), transparent),
@@ -73,7 +73,12 @@ a {
   text-align: center;
 }
 
+.landing-info h2 {
+  color: white;
+}
+
 .landing-info h3 {
+  color: white;
   padding: 3rem;
 }
 
@@ -92,6 +97,8 @@ a {
 .landing-info button:hover {
   background: rgb(38, 70, 78);
 }
+
+/* LOCATIONS PAGE SECTION */
 
 .locations-page {
   min-height: 100vh;
@@ -147,4 +154,10 @@ a {
   to {
     transform: translate(10%, -10%);
   }
+}
+
+/* BENEFITS PAGE SECTION */
+
+.benefits-page {
+  min-height: 100vh;
 }
