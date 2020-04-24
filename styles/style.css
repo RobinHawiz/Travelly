@@ -33,6 +33,8 @@ p {
   font-size: 1.5rem;
 }
 
+/* NAVBAR SECTION */
+
 .navbar {
   background-color: #131c27;
 }
@@ -92,7 +94,7 @@ a {
 .landing-info button {
   font-size: 1rem;
   padding: 1.5rem 4rem;
-  margin: 1rem;
+  margin-bottom: 1rem;
   background: #131c27;
   color: white;
   border: none;
@@ -256,5 +258,12 @@ a {
     padding-left: 0.6rem;
     padding-bottom: 0.6rem;
     justify-content: center;
+  }
+
+  /* LANDING PAGE SECTION */
+
+  .landing-page button {
+    font-size: 0.9rem;
+    padding: 1rem 2.5rem;
   }
 }
