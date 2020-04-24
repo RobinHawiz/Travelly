@@ -24,8 +24,12 @@ h3 {
   font-size: 1.9rem;
   font-weight: normal;
 }
+h4 {
+  font-size: 2rem;
+}
 
-a {
+a,
+p {
   font-size: 1.5rem;
 }
 
@@ -160,4 +164,48 @@ a {
 
 .benefits-page {
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.benefits-info {
+  min-height: 30vh;
+  background: #343c43;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 10rem;
+  justify-content: center;
+}
+
+.benefits-info h2 {
+  margin-bottom: 1rem;
+}
+
+.benefits-cards {
+  min-height: 70vh;
+  margin: auto;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.card {
+  text-align: center;
+  background: red;
+  margin: 0rem 2rem;
+  padding-bottom: 5rem;
+  flex: 1 1 20rem;
+}
+
+.image-containers {
+  height: 10rem;
+  background: #27394e;
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
 }
