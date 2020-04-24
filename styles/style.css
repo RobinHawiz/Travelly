@@ -8,7 +8,6 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  font-size: 62.5%;
 }
 
 h1 {
@@ -129,12 +128,13 @@ a {
 }
 
 .locations-info h2 {
+  padding: 0.5rem;
   text-decoration: underline;
   color: black;
 }
 
 .locations-info h3 {
-  padding: 3rem 0;
+  padding: 2rem 0;
   background: -webkit-linear-gradient(rgb(0, 0, 0), rgb(97, 62, 60));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -142,6 +142,7 @@ a {
 
 .cloud {
   position: absolute;
+  pointer-events: none;
   top: 0;
   right: 0;
 }
@@ -265,5 +266,24 @@ a {
   .landing-page button {
     font-size: 0.9rem;
     padding: 1rem 2.5rem;
+  }
+
+  /* LOCATIONS PAGE SECTION */
+
+  .locations-info {
+    text-align: center;
+  }
+  .locations-info h3 {
+    -webkit-text-fill-color: white;
+    background: rgba(19, 28, 39, 0.9);
+  }
+  .cloud {
+    height: 20rem;
+  }
+  .cloud1 {
+    z-index: -1;
+  }
+  .cloud2 {
+    z-index: -2;
   }
 }
