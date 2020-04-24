@@ -40,20 +40,23 @@ p {
 nav {
   min-height: 10vh;
   width: 90%;
+  padding: 1rem;
   margin: auto;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
 }
 
 .logo {
   font-family: "Pattaya", sans-serif;
-  flex: 2 1 40rem;
+  display: flex;
+  flex: 1 1 20rem;
   color: white;
 }
 
 ul {
-  flex: 1 1 20rem;
+  flex: 1 1 30rem;
   display: flex;
   justify-content: space-around;
 }
@@ -219,4 +222,39 @@ a {
 
 .image-containers img {
   margin: 2.5rem;
+}
+
+/* MEDIA QUERY */
+
+@media screen and (max-width: 939px) {
+  /* GLOBAL VARIABLES */
+
+  h1 {
+    font-size: 1.7rem;
+    font-weight: 400;
+  }
+
+  h2 {
+    font-size: 2.3rem;
+  }
+
+  h3 {
+    font-size: 1.3rem;
+    font-weight: normal;
+  }
+  h4 {
+    font-size: 2.1rem;
+  }
+  a,
+  p {
+    font-size: 1.2rem;
+  }
+
+  /* NAVBAR */
+
+  .logo {
+    padding-left: 0.6rem;
+    padding-bottom: 0.6rem;
+    justify-content: center;
+  }
 }
