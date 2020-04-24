@@ -229,6 +229,49 @@ a {
   margin: 2.5rem;
 }
 
+/* CONTACT PAGE SECTION */
+
+.contact-page {
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), transparent),
+    url("../img/contact-mountain.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-info {
+  background: rgba(19, 28, 39, 0.9);
+  color: white;
+  border-radius: 2rem;
+  width: 50%;
+}
+
+.contact-info h2 {
+  display: flex;
+  justify-content: center;
+}
+
+form {
+}
+
+form .input-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+form button {
+  width: 100%;
+}
+
+label {
+  display: inline-block;
+}
+
 /* MEDIA QUERY */
 
 @media screen and (max-width: 939px) {
