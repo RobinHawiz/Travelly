@@ -251,6 +251,7 @@ a {
 }
 
 .contact-info h2 {
+  padding: 2rem;
   display: flex;
   justify-content: center;
 }
@@ -258,18 +259,46 @@ a {
 form {
 }
 
+/*TODO: Add bigger input boxes*/
+
 form .input-box {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
+form input {
+  font-size: 1.5rem;
+  padding: 1rem;
+  width: 50%;
+  margin: 1rem;
+}
+
 form button {
+  background: #131c27;
+  color: white;
+  margin-top: 5rem;
   width: 100%;
+  padding: 1.2rem;
+  border-bottom-right-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+  font-size: 1.2rem;
+  border: none;
+  cursor: pointer;
+  transition: all ease-in-out 0.5s;
+}
+
+form button:hover {
+  background: rgb(38, 70, 78);
 }
 
 label {
   display: inline-block;
+  font-size: 1.5rem;
+}
+
+.email-box label {
+  padding-right: 0.5rem;
 }
 
 /* MEDIA QUERY */
