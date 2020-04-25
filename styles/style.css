@@ -301,15 +301,16 @@ label {
 footer {
   background: #131c27;
   color: white;
-  height: 10vh;
   display: flex;
   align-items: center;
 }
 
 .footer-wrapper {
   width: 90%;
+  padding: 3rem;
   margin: auto;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
@@ -421,5 +422,19 @@ footer {
   label {
     display: inline-block;
     font-size: 1rem;
+  }
+
+  /* FOOTER SECTION */
+
+  .footer-wrapper {
+    padding: 1rem;
+  }
+
+  .footer-wrapper h2 {
+    margin-left: 0.5rem;
+    padding-bottom: 0.5rem;
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
   }
 }
