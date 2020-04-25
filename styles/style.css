@@ -36,6 +36,9 @@ p {
 
 .navbar {
   background-color: #131c27;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 nav {
@@ -365,6 +368,10 @@ footer {
   }
 
   /* NAVBAR */
+
+  nav a {
+    font-size: 1rem;
+  }
 
   .logo {
     padding-left: 0.6rem;
