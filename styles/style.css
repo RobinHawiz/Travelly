@@ -400,4 +400,26 @@ footer {
   .image-containers img {
     height: 3rem;
   }
+
+  /* CONTACT PAGE SECTION */
+
+  .contact-info {
+    width: 80%;
+  }
+
+  .contact-info h2 {
+    font-size: 2rem;
+  }
+
+  form input {
+    font-size: 1rem;
+    padding: 0.5rem;
+    width: 50%;
+    margin: 1rem;
+  }
+
+  label {
+    display: inline-block;
+    font-size: 1rem;
+  }
 }
