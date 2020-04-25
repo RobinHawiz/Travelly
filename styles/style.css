@@ -6,9 +6,12 @@
   text-decoration: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Poppins", sans-serif;
-  font-size: 62.5%;
 }
 
 h1 {
@@ -18,40 +21,50 @@ h1 {
 
 h2 {
   font-size: 3rem;
-  color: white;
 }
 
 h3 {
-  color: white;
   font-size: 1.9rem;
   font-weight: normal;
 }
+h4 {
+  font-size: 2.1rem;
+}
 
-a {
+a,
+p {
   font-size: 1.5rem;
 }
 
+/* NAVBAR SECTION */
+
 .navbar {
   background-color: #131c27;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 nav {
   min-height: 10vh;
   width: 90%;
+  padding: 1rem;
   margin: auto;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
 }
 
 .logo {
   font-family: "Pattaya", sans-serif;
-  flex: 2 1 40rem;
+  display: flex;
+  flex: 1 1 20rem;
   color: white;
 }
 
 ul {
-  flex: 1 1 20rem;
+  flex: 1 1 30rem;
   display: flex;
   justify-content: space-around;
 }
@@ -59,6 +72,8 @@ ul {
 a {
   color: white;
 }
+
+/* LANDING PAGE SECTION */
 
 .landing-page {
   min-height: 90vh;
@@ -73,14 +88,19 @@ a {
   text-align: center;
 }
 
+.landing-info h2 {
+  color: white;
+}
+
 .landing-info h3 {
+  color: white;
   padding: 3rem;
 }
 
 .landing-info button {
   font-size: 1rem;
   padding: 1.5rem 4rem;
-  margin: 1rem;
+  margin-bottom: 1rem;
   background: #131c27;
   color: white;
   border: none;
@@ -92,6 +112,13 @@ a {
 .landing-info button:hover {
   background: rgb(38, 70, 78);
 }
+
+.landing-info button:focus {
+  transition: none;
+  outline: 0.2rem solid white;
+}
+
+/* LOCATIONS PAGE SECTION */
 
 .locations-page {
   min-height: 100vh;
@@ -113,12 +140,13 @@ a {
 }
 
 .locations-info h2 {
+  padding: 0.5rem;
   text-decoration: underline;
   color: black;
 }
 
 .locations-info h3 {
-  padding: 3rem 0;
+  padding: 2rem 0;
   background: -webkit-linear-gradient(rgb(0, 0, 0), rgb(97, 62, 60));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -126,6 +154,7 @@ a {
 
 .cloud {
   position: absolute;
+  pointer-events: none;
   top: 0;
   right: 0;
 }
@@ -146,5 +175,287 @@ a {
   }
   to {
     transform: translate(10%, -10%);
+  }
+}
+
+/* BENEFITS PAGE SECTION */
+
+.benefits-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.benefits-info {
+  min-height: 40vh;
+  background: #343c43;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0rem;
+  justify-content: center;
+}
+
+.benefits-info h2 {
+}
+.benefits-info h3 {
+  padding: 1rem;
+}
+
+.benefits-cards {
+  min-height: 60vh;
+  margin: auto;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.benefits-cards h4 {
+  padding: 0.5rem;
+}
+
+.benefits-cards p {
+  padding: 0.5rem;
+}
+
+.card {
+  text-align: center;
+  margin: 3rem;
+  padding-bottom: 10rem;
+  flex: 1 1 25rem;
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.image-containers {
+  height: 10rem;
+  background: #27394e;
+  display: flex;
+  justify-content: center;
+}
+
+.image-containers img {
+  margin: 2.5rem;
+}
+
+/* CONTACT PAGE SECTION */
+
+.contact-page {
+  min-height: 90vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), transparent),
+    url("../img/contact-mountain.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-info {
+  background: rgba(19, 28, 39, 0.9);
+  color: white;
+  border-radius: 2rem;
+  width: 50%;
+}
+
+.contact-info h2 {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+form .input-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+form input {
+  font-size: 1.5rem;
+  padding: 1rem;
+  width: 50%;
+  margin: 1rem;
+}
+
+form button {
+  background: #131c27;
+  color: white;
+  margin-top: 5rem;
+  width: 100%;
+  padding: 1.2rem;
+  border-bottom-right-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+  font-size: 1.2rem;
+  border: none;
+  cursor: pointer;
+  transition: all ease-in-out 0.5s;
+}
+
+form button:hover {
+  background: rgb(38, 70, 78);
+}
+
+form button:focus {
+  transition: none;
+  outline: 0.2rem solid white;
+}
+
+label {
+  display: inline-block;
+  font-size: 1.5rem;
+}
+
+.email-box label {
+  padding-right: 0.5rem;
+}
+
+/* FOOTER */
+
+footer {
+  background: #131c27;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.footer-wrapper {
+  width: 90%;
+  padding: 3rem;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-wrapper h2 {
+  font-size: 2rem;
+  flex: 1 1 20rem;
+}
+
+.socials {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex: 1 1 20rem;
+}
+
+/* MEDIA QUERY */
+
+@media screen and (max-width: 939px) {
+  /* GLOBAL VARIABLES */
+
+  h1 {
+    font-size: 1.7rem;
+    font-weight: 400;
+  }
+
+  h2 {
+    font-size: 2.3rem;
+  }
+
+  h3 {
+    font-size: 1.3rem;
+    font-weight: normal;
+  }
+  h4 {
+    font-size: 1.7rem;
+  }
+  a,
+  p {
+    font-size: 1.2rem;
+  }
+
+  /* NAVBAR */
+
+  nav a {
+    font-size: 1rem;
+  }
+
+  .logo {
+    padding-left: 0.6rem;
+    padding-bottom: 0.6rem;
+    justify-content: center;
+  }
+
+  /* LANDING PAGE SECTION */
+
+  .landing-page button {
+    font-size: 0.9rem;
+    padding: 1rem 2.5rem;
+  }
+
+  /* LOCATIONS PAGE SECTION */
+
+  .locations-info {
+    text-align: center;
+  }
+  .locations-info h3 {
+    -webkit-text-fill-color: white;
+    background: rgba(19, 28, 39, 0.9);
+  }
+  .cloud {
+    height: 20rem;
+  }
+  .cloud1 {
+    z-index: -1;
+  }
+  .cloud2 {
+    z-index: -2;
+  }
+
+  /* BENEFITS PAGE SECTION */
+
+  .card {
+    text-align: center;
+    padding-bottom: 2rem;
+  }
+  .image-containers {
+    display: flex;
+    align-items: center;
+  }
+  .image-containers img {
+    height: 3rem;
+  }
+
+  /* CONTACT PAGE SECTION */
+
+  .contact-info {
+    width: 80%;
+  }
+
+  .contact-info h2 {
+    font-size: 2rem;
+  }
+
+  form input {
+    font-size: 1rem;
+    padding: 0.5rem;
+    width: 50%;
+    margin: 1rem;
+  }
+
+  label {
+    display: inline-block;
+    font-size: 1rem;
+  }
+
+  /* FOOTER SECTION */
+
+  .footer-wrapper {
+    padding: 1rem;
+  }
+
+  .footer-wrapper h2 {
+    margin-left: 0.5rem;
+    padding-bottom: 0.5rem;
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
   }
 }
