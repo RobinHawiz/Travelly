@@ -1,7 +1,7 @@
 ### 24/04-20
 I'm almost done with the page! Made it mobile responsive and tried to tackle the contact page (**really had to scratch my head around how flexbox worked, when to apply it to what and such**) and I hope to be done with the page by tomorrow :)
 
-EDIT: Started on a new project! https://github.com/RobinHawiz/google-spinoff.git
+**EDIT:** Started on a new project! https://github.com/RobinHawiz/google-spinoff.git
 
 ### 23/04-20
 
