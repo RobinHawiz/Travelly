@@ -1,5 +1,5 @@
 ### 09/09-24
-This repository represents a webbpage I made for a <ins>travelling agency</ins>.
+This repository represents a webpage I made for a <ins>travelling agency</ins>.
 Here is a **list** on different technologies that were used when creating the webbsite:
 1. HTML
 2. CSS
